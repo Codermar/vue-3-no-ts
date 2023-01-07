@@ -14,6 +14,7 @@ export default defineConfig({
     [
       'btn',
       'px-4 py-1 rounded inline-block bg-teal-700 text-white cursor-pointer hover:bg-teal-800 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50',
+      ['border-dotted-base', 'border-dotted border-width-1px'],
       ['bdb', ' border-blue-400 border-dotted-base'],
       ['bdf', ' border-fuchsia-400 border-dotted-base'],
       ['bdg', ' border-green-400 border-dotted-base'],

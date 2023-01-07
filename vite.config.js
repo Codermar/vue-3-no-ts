@@ -51,7 +51,18 @@ export default defineConfig({
 
     // https://github.com/antfu/unocss
     // see unocss.config.ts for config
-    Unocss(),
+    Unocss({
+      shortcuts: [
+        { 'border-dotted-base': 'border-dotted border-width-1px' },
+        ['bdb', ' border-blue-400 border-dotted-base'],
+        ['bdf', ' border-fuchsia-400 border-dotted-base'],
+        ['bdg', ' border-green-400 border-dotted-base'],
+        ['bdr', ' border-red-400 border-dotted-base'],
+        ['bdw', ' border-white-400 border-dotted-base'],
+        ['bdo', ' border-orange-300 border-dotted-base'],
+        ['bdt', ' border-width-2px'],
+      ],
+    }),
   ],
   resolve: {
     alias: {
